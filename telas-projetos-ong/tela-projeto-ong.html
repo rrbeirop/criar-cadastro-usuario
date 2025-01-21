@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="tela-projeto-ong.css">
+    <title>Tela de Projetos de ONG</title>
+</head>
+
+<body>
+    <!-- Início cabeçalho -->
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Ongs</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+        </nav>
+        <div id="header-direita">
+            <div class="lupa" id="busca">
+                <a class="busca" href="#"><span class="material-symbols-outlined">
+                        search
+                    </span>
+                </a>
+            </div>
+            <div id="login">
+                <button id="btn-login">
+                    Login
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Fim cabeçalho -->
+    <!-- Início DIV principal -->
+    <div id="principal">
+        <div class="principal-esq">
+            <div class="info-conteiner">
+                <div class="header-conteiner">
+                    <h3>Nome do Projeto</h3>
+                    <h4 class="arrecadacao">Arrecadado: R$ 20.000</h4>
+                    <div>
+                        progress bar
+                    </div>
+                </div>
+                <div class="info-projeto">
+                    <p>Meta: <strong>R$ 100.000</strong></p>
+                    <p>Status: Em progresso (<strong>20% alcançado</strong>)</p>
+                    <p><strong>24</strong>Doações Recebidas</p>
+                    <div class="btn-favoritos-compartilhar">
+                        <button class="btn-favoritos"></button>
+                        <button class="btn-compartilhar"></button>
+                    </div>
+                </div>
+                <div class="btns-ajudar-projeto">
+                    <button class="btn-doacao">Fazer uma doação</button>
+                    <button class="btn-voluntario">Fazer uma doação</button>
+                </div>
+            </div>
+            <div>
+                <ul class="btns-slider">
+                    <li class="slide active">
+                        <a href="#">
+                            <h4>Sobre</h4>
+                        </a>
+                        <img src="../imgs/interrogaction.png" alt="Icon de Interrogação">
+                    </li>
+                    <p>Slide Sobre</p>
+                    <li class="slide">
+                        <a href="#">
+                            <h4>Doadores</h4>
+                        </a>
+                        
+                        <p>Slide Doadores</p>
+                        <img src="../imgs/" alt="Icon de Mão colocando moeda">
+                    </li>
+                    <li class="slide">
+                        <a href="#">
+                            <h4>Voluntários</h4>
+                        </a>
+                        <p>Slide voluntarios</p>
+                        <img src="../imgs/hug.png" alt="Icon de Abraço">
+                    </li>
+                    <li class="slide">
+                        <a href="">
+                            <h4>Responsáveis</h4>
+                        </a>
+                        <p>Slide Responsáveis</p>
+                        <img src="../imgs/" alt="Icon de Medalha">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Fim DIV principal  -->
+        <script src="tela-projeto-ong.js"></script>
+</body>
+
+</html>
