@@ -1,20 +1,21 @@
 document.addEventListener('DOMContentLoaded',() => {
     const slides = document.querySelectorAll('.slide')
+    const btns = document.querySelectorAll('.btns-slider button')
     let indexCorreto = 0
 
     function showSlide(index) {
         slides[indexCorreto].classList.remove('active')
-        slides[indexCorreto].classList.add('previous')
+        btns[indexCorreto].classList.remove('active')
         indexCorreto = index;
-        slides[indexCorreto].classList.remove('active')
-        slides[indexCorreto].classList.add('previous')
+        slides[indexCorreto].classList.add('active')
+        btns[indexCorreto].classList.add('active')
     }
-    slides.forEach((slide, index) => {
-        slide.addEventListener('click', () => {
+    btns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
             showSlide(index)
         })
     })
-
+    showSlide(0)
 })
 
 function mudaMenu() {
