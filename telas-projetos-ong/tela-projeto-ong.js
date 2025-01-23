@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slide')
     const btns = document.querySelectorAll('.btns-slider button')
     let indexCorreto = 0
@@ -30,4 +30,19 @@ function esqueciSenha() {
     painelSenha.style.display = 'flex';
 }
 
+//Carousel//
 
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+function changeSlide() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    const offset = -currentIndex * 100;
+
+    document.querySelector('.carousel-imgs').style.transform = `translateX(${offset}%)`; // Corrigido aqui
+}
+
+setInterval(changeSlide, 3000);
+
+//fim carousel//
