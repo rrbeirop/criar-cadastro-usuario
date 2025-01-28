@@ -41,6 +41,21 @@
             </div>
         </div>
     </header>
+    <!-- pooup sr -->
+    <div id="fundo-popup">
+        <div class="popup">
+            <div class="img">
+                <img src="/imgs/erro403.png">
+                <!-- LEMBRE-SE DE MUDAR O CAMINHO, CASO VC SALVAR A IMAGEM EM OUTRO LUGAR-->
+            </div>
+            <div class="msg">
+                <p class="linha1">Para realizar essa ação </p>
+                <p>Faça seu Login</p>
+                <button class="btn-maistarde" onclick="fecharPopup()">Mais Tarde</button>
+            </div>
+
+        </div>
+    </div>
     <!-- Fim cabeçalho -->
     <!-- Início DIV principal -->
     <div id="principal">
@@ -59,12 +74,13 @@
                     <p class="arrecadacao">Arrecadado: R$ 50.000</p>
                     <p>87 Doações Recebidas</p>
                     <div class="btn-favoritos-compartilhar">
-                        <button class="icon-coracao"><img src="imgs/love.png" alt="Icon de coração"></button>
+                        <button class="icon-coracao" onclick="abrirPopup()"><img src="imgs/love.png" alt="Icon de coração"></button>
                         <button class="icon-compartilhar"><img src="imgs/share.png" alt="Icon de compartilhar"></button>
                     </div>
                     <div class="btn-info-ong">
-                        <button class="doacao">Fazer uma doação</button>
-                        <button class="voluntario">Tornar-se Voluntário</button>
+                        <button class="doacao" onclick="abrirPopup()">Fazer uma doação</button>
+
+                        <button class="voluntario" onclick="abrirPopup()">Tornar-se Voluntário</button>
                     </div>
                 </div>
             </div>
@@ -274,6 +290,7 @@
         </div>
     </div>
     <script src="java.js"></script>
+    <script src="busca.js"></script>
     <!-- Fim DIV principal  -->
 </body>
 

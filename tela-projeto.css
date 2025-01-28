@@ -631,4 +631,79 @@ nav ul li {
 
 }
 
+/* popup exibir erro */
+#fundo-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#fundo-popup.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+#fundo-popup.ativo .popup {
+    margin-top: 0;
+}
+
+.popup {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    padding: 40px 40px;
+    display: flex;
+    gap: 40px;
+    margin-top: 100%;
+    transition: .5s ease;
+    color: FFFFFF;
+    align-items: center;
+}
+
+.popup .msg {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    width: 300px;
+    align-items: center;
+}
+
+.popup .msg .linha1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    font-size:25px;
+    color: black;
+}
+
+.popup .msg p {
+    font-size: 25px;
+    color: #007AFF;
+    
+}
+
+.popup img {
+    width: 300px;
+   
+}
+
+.btn-maistarde {
+    background-color:#1C3464;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 15px 36px;
+    margin-top: 50px;
+}
+/* Fim popup */
+
+
 /* Fim do conteudo desta page */
